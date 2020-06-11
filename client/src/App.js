@@ -36,13 +36,13 @@ class App extends Component {
     });
   };
 
-  getWeather = (city) => {console.log(city);
+  getWeather = (city) => {
     if (city === "def") {
       this.setState({ weather: null });
     } else{
       fetch(`/api/weather/${city}`)
       .then(res => res.json())
-      .then(weather => {console.log(weather);
+      .then(weather => {
         this.setState({ weather });
       });
     }
