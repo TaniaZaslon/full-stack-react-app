@@ -10,7 +10,7 @@ router.get('/:city', function (req, res) {
     if (err)
       return res.json(err);
     return res.json(weather);
-  });
+  });  
 });
 
 module.exports = router;
